@@ -17,28 +17,32 @@ The solution consists of the following files:
 ## Getting Started
 
 To use and test the Log Analysis and Monitoring Script, follow these steps:
-**Make Directory**: 
+1. **Make Directory**: 
 
-1. mkdir log-scripts
-2. cd log-scripts
+- `mkdir log-scripts`
+  
+- `cd log-scripts`
 
-**Install Dependencies** (if any): If the script has any dependencies, make sure they are installed. This information will be provided in the README or script itself.
+2. **Install Dependencies** (if any): If the script has any dependencies, make sure they are installed. This information will be provided in the README or script itself.
 
-**Configure the Script**: Open the `log-monitor.py` script in a text editor and configure any necessary parameters, such as the path to the log file to monitor.
+3. **Configure the Script**: Open the `log-monitor.py` script in a text editor and configure any necessary parameters, such as the path to the log file to monitor.
 
-**Run the Script**: Execute the Python script using the following command:
-for python: '''python3 log-monitor.py'''
+ We are using apache access_log file to monitor : `/opt/homebrew/var/log/httpd/access_log`
+ 
+4. **Run the Script**: Execute the Python script using the following command:
 
-for shell: 
-1. Give the permissions: '''chmod +x log-monitor.sh'''
-2. Execute command: '''./log-monitor.sh'''
+A. **For python**: ```python3 log-monitor.py```
+
+B. **For shell**: 
+1. Give the permissions: ```chmod +x log-monitor.sh```
+2. Execute command: ```./log-monitor.sh```
 
 
-**Monitor Output**: The script will start monitoring the specified log file and display new entries in real-time. It will also perform basic log analysis and generate summary reports.
+5. **Monitor Output**: The script will start monitoring the specified log file and display new entries in real-time. It will also perform basic log analysis and generate summary reports.
 
 ![alt text](LOG-SCRIPTING-REPORT-1.png)
 
-**Interrupt Monitoring**: To stop the monitoring loop, press `Ctrl+C` in the terminal. This will send an interrupt signal to the script, causing it to exit gracefully.
+6. **Interrupt Monitoring**: To stop the monitoring loop, press `Ctrl+C` in the terminal. This will send an interrupt signal to the script, causing it to exit gracefully.
 
 ## License
 
